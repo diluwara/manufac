@@ -4,6 +4,7 @@ import { calculateMean, calculateMedian, calculateMode, addGammaProperty } from 
 import Table from './components/Table';
 import { Wine, Statistics, RawWineDataItem } from './types/wineTypes';
 import { sanitizeData } from './utils/sanitizeData';
+import styles from './App.module.scss';
 
 const App: React.FC = () => {
   const wineData = sanitizeData(rawData as unknown as RawWineDataItem[]);
@@ -50,11 +51,9 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <h1>Wine Data Statistics</h1>
-      <h2>Flavanoids Statistics</h2>
-      <Table data={flavanoidsStats} />
-      <h2>Gamma Statistics</h2>
-      <Table data={gammaStats} />
+      <h1 className={styles.h1}>Wine Data Statistics</h1>
+      <Table data={flavanoidsStats} heading="Flavanoids Statistics" /> {/* Added heading prop */}
+      <Table data={gammaStats} heading="Gamma Statistics" /> {/* Added heading prop */}
     </div>
   );
 }
