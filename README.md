@@ -1,3 +1,5 @@
+![image](https://github.com/diluwara/manufac/assets/59523197/86a27e58-8fe9-4863-8313-0bcc395306b9)
+
 # Manufac Analytics: Wine Data Statistics
 
 ## Description
