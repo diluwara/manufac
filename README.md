@@ -29,13 +29,13 @@ Running the Application
 
 4. **Development Mode:**
 
-  ```bash
-  npm start
+   ```bash
+   npm start
   
 This will start the development server, and the application will be accessible at http://localhost:3000.
 
 5. **Building the Application:**
   
-  ```bash
-  npm run build
+   ```bash
+   npm run build
   
